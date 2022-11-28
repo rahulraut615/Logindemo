@@ -1,0 +1,21 @@
+<h1>Reactive form</h1>
+<br>
+<div>
+    <form [formGroup]="contactForm" (ngSubmit)="(contactForm.value)">
+        <div>
+        <input type="text" formControlName="name" >
+    </div>
+    <div>
+        <input type="email" formControlName="email" >
+    </div>
+    <div>
+        
+        <input type="password" formControlName="password">
+    </div>
+    <div>
+        <input type="submit"  >
+        <a type="submit"  >Post Data</a>
+       
+    </div>
+    </form>
+</div>
